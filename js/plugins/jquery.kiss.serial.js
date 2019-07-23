@@ -18,7 +18,9 @@
             c += '<option value="3" data-i18n="serialtype.3">VTX</option>';
             c += '<option value="4" data-i18n="serialtype.4">ESC TLM</option>';
             c += '<option value="5" data-i18n="serialtype.5">Runcam</option>';
-            c += '<option value="6" data-i18n="serialtype.5">VTX + ESC TLM</option>';
+            c += '<option value="6" data-i18n="serialtype.6">VTX + ESC TLM</option>';
+            if (data.version > 117)
+                c += '<option value="7" data-i18n="serialtype.7">GPS</option>';
             c += '</select></dd>';
             self.empty();
             self.append(c);
